@@ -1,0 +1,64 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.app{
+  display: flex;
+  height: 100vh;
+  padding: 3rem;
+  margin: 0;
+  flex-direction: column;
+  background-color: beige;
+  height: 100vh;
+  align-items: center;
+}
+
+.box{
+  background-color: rgba(216, 184, 5, 0.911);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.column{
+  background-color: azure;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: medium;
+  color: blueviolet;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 768px){
+  .box{
+    grid-template-columns: 1fr;
+  }
+}
+.task{
+  cursor: pointer;
+  background-color: palevioletred;
+  border-radius: 14px;
+  font-size: medium;
+  color: wheat;
+  padding: 0.5rem;
+  margin: 1rem;
+
+}
+.task:hover{
+ background-color: pink;
+}
